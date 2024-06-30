@@ -12,6 +12,9 @@ import { FooterComponent } from './components/footer/footer.component'
 import { NavbarComponent } from './components/navbar/navbar.component'
 import { CountriesComponent } from './components/countries/countries.component'
 import { StepsComponent } from './components/steps/steps.component'
+import { AllDestinationComponent } from './components/all-destination/all-destination.component'
+import { AboutComponent } from './components/about/about.component'
+
 
 
 @Component({
@@ -31,6 +34,8 @@ import { StepsComponent } from './components/steps/steps.component'
     NavbarComponent,
     CountriesComponent,
     StepsComponent,
+    AllDestinationComponent,
+    AboutComponent
   ],
   templateUrl: './mobile-showcase.component.html',
   styles: ``,
