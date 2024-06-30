@@ -10,7 +10,7 @@ import { initAOS } from 'src/app/utils/init-aos'
   standalone: true,
   imports: [Breadcrumb1Component, CommonModule, RouterModule],
   templateUrl: './content.component.html',
-  styles: ``,
+  styleUrls: ['./content.component.scss']
 })
 export class ContentComponent implements AfterViewInit {
   allPortfolioList: PortfolioType[] = portfolioList

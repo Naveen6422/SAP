@@ -9,7 +9,7 @@ import { initAOS } from 'src/app/utils/init-aos'
   standalone: true,
   imports: [Breadcrumb1Component, RouterModule],
   templateUrl: './case-studies.component.html',
-  styles: ``,
+   styleUrls: ['./case-studies.component.scss']
 })
 export class CaseStudiesComponent implements AfterViewInit {
   portfolioList: PortfolioList2Type[] = portfolioList2

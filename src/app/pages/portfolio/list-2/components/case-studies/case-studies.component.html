@@ -1,86 +1,205 @@
-<section class="container pt-5 pb-sm-3 mt-5 mb-2 mb-md-3 mb-lg-4 mb-xxl-5">
-  <app-breadcrumb-1 title="Home" pageTitle="Portfolio list v.2" />
+ <div class="container-divider mt-5 mb-5"></div>
 
-  <h1 class="pb-3">Our case studies</h1>
+   
+<div class="container c1 mt-5">
+  <nav class="sub-nav">
+    <nav aria-label="Current location">
+  <ol class="breadcrumbs">
+    
+      <li>
+        
+          <a href="#"> Help Center</a>
+        
+      </li>
+    
+      <li>
+        
+          
+            <a href="#" aria-current="page">Getting Started with </a>
+          
+        
+      </li>
+    
+  </ol>
+</nav>
 
-  @for (item of portfolioList; track $index) {
-    <div class="row align-items-center pt-xl-2 pb-5 mb-lg-2 mb-xl-3 mb-xxl-4">
-      <div class="col-md-7 col-lg-6 mb-4 mb-md-0">
-        <a class="d-block position-relative" routerLink="/portfolio/single-1">
-          <div
-            class="{{
-              item.bgColor
-            }} rounded-5 position-absolute top-0 start-0 w-100 h-100"
-            [style.backgroundColor]="
-              item.bgColor == 'bg-custom' ? '#d7e4f4' : ''
-            "
-            data-aos="zoom-in"
-            data-aos-duration="600"
-            data-aos-offset="250"
-          ></div>
-          <img
-            class="d-block position-relative z-2 mx-auto"
-            [src]="item.image"
-            width="636"
-            alt="Image"
-            data-aos="fade-in"
-            data-aos-duration="400"
-            data-aos-offset="250"
-          />
-        </a>
-      </div>
-      <div
-        class="col-md-5 col-xl-4 offset-lg-1"
-        data-aos="fade-up"
-        data-aos-duration="400"
-        data-aos-offset="170"
-      >
-        <div class="ps-md-3 ps-lg-0">
-          @if (item.brand) {
-            <img class="d-block mb-2 mb-lg-3" [src]="item.brand" alt="Foster" />
-          } @else {
-            <img
-              class="d-block d-dark-mode-none mb-2 mb-lg-3"
-              [src]="item.brandDark"
-              alt="Champion"
-            />
-            <img
-              class="d-none d-dark-mode-block mb-2 mb-lg-3"
-              [src]="item.brandLight"
-              alt="Champion"
-            />
-          }
-          <h2 class="h4">{{ item.title }}</h2>
-          <div [innerHTML]="item.description"></div>
-          <a
-            class="btn btn-sm btn-outline-dark rounded-pill"
-            routerLink="/portfolio/single-1"
-            >Read the full story</a
-          >
-          @if (item.awards) {
-            <div class="d-flex align-items-center pt-2 pt-lg-3 mt-3">
-              <h6 class="text-body mb-0 me-3">Awards:</h6>
-              @for (data of item.awards; track $index; let last = $last) {
-                <img
-                  class="d-block d-dark-mode-none me-4"
-                  [src]="data"
-                  [width]="last ? 95 : 90"
-                  alt="Vue.js"
-                />
-              }
+    <div class="search-container">
+      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="search-icon" aria-hidden="true">
+        <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor"></circle>
+        <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5"></path>
+      </svg>
+      <form role="search" class="search" data-search="" action="#" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓" autocomplete="off"><input type="hidden" name="category" id="category" value="12777342059164" autocomplete="off">
+<input type="search" name="query" id="query" placeholder="Search" aria-label="Search"><button type="button" aria-controls="query" class="clear-button"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" role="img" viewBox="0 0 12 12" aria-label="Clear search"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M3 9l6-6m0 6L3 3"></path></svg></button></form>
+    </div>
+  </nav>
 
-              @for (data of item.awardDark; track $index; let last = $last) {
-                <img
-                  class="d-none d-dark-mode-block me-4"
-                  [src]="data"
-                  [width]="last ? 95 : 90"
-                  alt="Vue.js"
-                />
-              }
-            </div>
-          }
-        </div>
+  <div class="category-container">
+    <div class="category-content">
+      <header class="page-header">
+        <h1>Getting Started with </h1>
+        
+      </header>
+
+      <div id="main-content" class="section-tree">
+        
+          <section class="section">
+            <h2 class="section-tree-title">
+              <a href="#">Setting up</a>
+            </h2>
+            
+              <ul class="article-list">
+                
+                  <li class="article-list-item">
+                    
+                    <a href="#" class="article-list-link">Does  provide bundle/regional plans?</a>
+                    
+                  </li>
+                
+                  <li class="article-list-item">
+                    
+                    <a href="#" class="article-list-link">How do I install the  eSIM on my Android device?</a>
+                    
+                  </li>
+                
+                  <li class="article-list-item">
+                    
+                    <a href="#" class="article-list-link">How do I install the  eSIM on my iOS device?</a>
+                    
+                  </li>
+                
+                  <li class="article-list-item">
+                    
+                    <a href="#" class="article-list-link">How can I get an eSIM?</a>
+                    
+                  </li>
+                
+                  <li class="article-list-item">
+                    
+                    <a href="#" class="article-list-link">How do I download the  App?</a>
+                    
+                  </li>
+                
+                  <li class="article-list-item">
+                    
+                    <a href="#" class="article-list-link">When can I install my  eSIM?</a>
+                    
+                  </li>
+                
+              </ul>
+              
+                <a href="#" class="see-all-articles">
+                  See all 13 articles
+                </a>
+              
+            
+          </section>
+        
+          <section class="section">
+            <h2 class="section-tree-title">
+              <a href="#">Using  eSIM</a>
+            </h2>
+            
+              <ul class="article-list">
+                
+                  <li class="article-list-item">
+                    
+                    <a href="#" class="article-list-link">Should I delete the eSIM on my old phone?</a>
+                    
+                  </li>
+                
+                  <li class="article-list-item">
+                    
+                    <a href="#" class="article-list-link">When is it safe to remove eSIMs from my device?</a>
+                    
+                  </li>
+                
+                  <li class="article-list-item">
+                    
+                    <a href="# "class="article-list-link">Can I reinstall an eSIM?</a>
+                    
+                  </li>
+                
+                  <li class="article-list-item">
+                    
+                    <a href="#" class="article-list-link">Does an eSIM work without the internet?</a>
+                    
+                  </li>
+                
+                  <li class="article-list-item">
+                    
+                    <a href="#" class="article-list-link">Can I use both an eSIM and a physical SIM with the same number?</a>
+                    
+                  </li>
+                
+                  <li class="article-list-item">
+                    
+                    <a href="#" class="article-list-link">Can I access all apps and websites with my eSIM mobile data?</a>
+                    
+                  </li>
+                
+              </ul>
+              
+                <a href="#" class="see-all-articles">
+                  See all 9 articles
+                </a>
+              
+            
+          </section>
+        
+          <section class="section">
+            <h2 class="section-tree-title">
+              <a href="#">Device compatibility</a>
+            </h2>
+            
+              <ul class="article-list">
+                
+                  <li class="article-list-item">
+                    
+                    <a href="#" class="article-list-link">How to check if my device is eSIM compatible?</a>
+                    
+                  </li>
+                
+                  <li class="article-list-item">
+                    
+                    <a href="#" class="article-list-link">Can I use  if my device doesn't support eSIM?</a>
+                    
+                  </li>
+                
+                  <li class="article-list-item">
+                    
+                    <a href="#" class="article-list-link">Can I have two eSIMs on an iPhone 14?</a>
+                    
+                  </li>
+                
+                  <li class="article-list-item">
+                    
+                    <a href="#" class="article-list-link">Does the iPhone 14 have a SIM tray?</a>
+                    
+                  </li>
+                
+                  <li class="article-list-item">
+                    
+                    <a href="#" class="article-list-link">How many eSIMs can the iPhone 14 have?</a>
+                    
+                  </li>
+                
+                  <li class="article-list-item">
+                    
+                    <a href="#" class="article-list-link">How many eSIMs can an iPhone 15 have?</a>
+                    
+                  </li>
+                
+              </ul>
+              
+                <a href="#" class="see-all-articles">
+                  See all 7 articles
+                </a>
+              
+            
+          </section>
+        
       </div>
     </div>
-  }
-</section>
+  </div>
+</div>
+
